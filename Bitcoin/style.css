@@ -1,0 +1,103 @@
+/* Reset de estilos y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: #0d1117;
+    color: #c9d1d9;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #f7931a;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f7931a;
+    text-shadow: 0 0 10px rgba(247, 147, 26, 0.5);
+}
+
+/* Estilos de la tarjeta de Bitcoin */
+.bitcoin-card {
+    background-color: #161b22;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border: 1px solid #30363d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bitcoin-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.bitcoin-card h2 {
+    font-size: 1.8rem;
+    color: #f7931a;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.bitcoin-card p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.bitcoin-card strong {
+    font-weight: 700;
+    color: #58a6ff;
+}
+
+.bitcoin-card .price {
+    font-size: 1.5rem;
+    color: #238636;
+}
+
+/* Estilos del cargador */
+#loading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.loader {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(247, 147, 26, 0.3);
+    border-radius: 50%;
+    border-top-color: #f7931a;
+    animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loading p {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #768390;
+}
