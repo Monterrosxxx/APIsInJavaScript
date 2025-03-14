@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container api-container">
+        <header>
+            <h1>Lista de Tareas</h1>
+        </header>
+
+        <div id="loading">
+            <div class="loader"></div>
+            <p>Cargando tareas...</p>
+        </div>
+
+        <div id="todos-container" class="cards-container"></div>
+
+        <div class="pagination">
+            <button id="prev-btn" disabled><i class="fas fa-chevron-left"></i> Anterior</button>
+            <span id="page-info">Página 1</span>
+            <button id="next-btn">Siguiente <i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
